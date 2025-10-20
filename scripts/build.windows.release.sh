@@ -13,7 +13,7 @@ cmake -DCMAKE_BUILD_TYPE=Release -DYAML_CPP_BUILD_TESTS=OFF -DYAML_CPP_BUILD_TOO
 make install -j4
 cd ..
 
-git clone https://github.com/ftk/quickjspp --depth=1
+git clone https://github.com/ftk/quickjspp
 cd quickjspp
 git checkout 0c00c48895919fc02da3f191a2da06addeb07f09
 patch quickjs/quickjs-libc.c -i ../scripts/patches/0001-quickjs-libc-add-realpath-for-Windows.patch

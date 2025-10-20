@@ -15,6 +15,7 @@ cd ..
 
 git clone https://github.com/ftk/quickjspp --depth=1
 cd quickjspp
+git checkout 0c00c48895919fc02da3f191a2da06addeb07f09
 patch quickjs/quickjs-libc.c -i ../scripts/patches/0001-quickjs-libc-add-realpath-for-Windows.patch
 cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release .
 make quickjs -j4

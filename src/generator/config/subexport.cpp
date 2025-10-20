@@ -951,8 +951,8 @@ std::string proxyToSurge(std::vector<Proxy> &nodes, const std::string &base_conf
             // if(x.DownSpeed)
             proxy += ", download-bandwidth=" + x.DownSpeed;
             
-            if(!scv.is_undef())
-                proxy += ",skip-cert-verify=" + std::string(scv.get() ? "true" : "false");
+            // if(!scv.is_undef())
+            //    proxy += ",skip-cert-verify=" + std::string(scv.get() ? "true" : "false");
             if(!x.Fingerprint.empty())
                 proxy += ",server-cert-fingerprint-sha256=" + x.Fingerprint;
             if(!x.SNI.empty())
